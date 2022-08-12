@@ -19,5 +19,4 @@ funds['nav'] = funds['nav'].apply(getPrice)
 funds['premium'] = 100 * (funds['price'] - funds['nav']) / funds['nav']
 
 #%%
-funds.to_csv("NAV.csv")
-# %%
+funds.to_csv("NAV.csv", index = False)
